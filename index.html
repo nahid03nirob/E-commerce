@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mart Nahid</title>
     <script src="https://cdn.tailwindcss.com"></script>
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     body {
-      font-family: 'Lato', sans-serif;
-    }
+    font-family: 'Quicksand', sans-serif;
+}
   </style>
 </head>
-<body>
+<body class="max-w-[1920px]">
+    <!-- Top Bar -->
 <section class="flex justify-between items-center px-[154px] py-2.5">
     <div class="space-x-4 text-[14px] text-[#7E7E7E]">
         <a href="">About Us</a>
@@ -24,34 +25,87 @@
         <a href="">Order Tracking</a>
     </div>
     <div>
-        <p class="text-[#3BB77E] font-bold">100% Secure delivery without contacting the courier</p>
+        <p class=" text-yellow-400 font-bold">100% Secure delivery without contacting the courier</p>
     </div>
     <div>
-        <p class="space-x-4 text-[14px] text-[#7E7E7E]">Need help? Call Us: <span class="text-[#3BB77E]">+1800900122</span></p>
+        <p class="space-x-4 text-[14px] text-[#7E7E7E]">Need help? Call Us: <span class=" text-yellow-400">+880122345678910</span></p>
     </div>
 </section>
-<section>
-    <div>
-        <h1>Mart Nahid</h1>
-    </div>
+<!-- Main Header -->
+<section  class="flex justify-between items-center px-[154px] py-2.5">
+<div>
+    <h1 class="text-4xl font-extrabold text-yellow-400">Nahid</h1>
+    <p class="text-sm text-gray-500 font-bold text-center">M a r t</p>
+</div>
 <div>
     <form action="/search-results" method="GET">
         
-        <input type="search" placeholder="Search for products..." aria-label="Search products">
+        <input type="search" placeholder="Search for products..." aria-label="Search products" class="border-[3px] border-yellow-400 w-[600px] h-[50px] rounded-[7px] text-center ">
         
-        <input type="submit" value="Search">
+        <input type="submit" value="Search" class="bg-yellow-400 text-gray-500 font-bold w-[100px] h-[50px] rounded-[7px] hover:bg-yellow-500">
         
     </form>
 </div>
     <div>
-        <button>Became Vendor →</button>
-    </div>
-    <div>
-        <a href="">Compare</a>
-        <a href="">Wishlist</a>
-        <a href="">Cart</a>
-        <a href="">Account</a>
-    </div>
+    <button class="text-yellow-500 border border-neutral-100 bg-white font-medium w-[172px] h-[50px] rounded-[10px] shadow-[0_4px_12px_rgba(0,0,0,0.08)] hover:bg-yellow-50 transition-all duration-200">
+        Become Vendor →
+    </button>
+</div>
+<div class="text-[14px] text-[#7E7E7E] flex items-center gap-6">
+    <a href="" class="flex items-center gap-1">
+        <img src="image/compare.png" alt="Compare">
+        <span>Compare</span>
+    </a>
+
+    <a href="" class="flex items-center gap-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 0 1 0 3.75H5.625a1.875 1.875 0 0 1 0-3.75Z" />
+</svg>
+
+        <span>Wishlist</span>
+    </a>
+
+    <a href="" class="flex items-center gap-1">
+        <img src="image/cart.png" alt="Cart">
+        <span>Cart</span>
+    </a>
+
+    <a href="" class="flex items-center gap-1">
+        <img src="image/account.png" alt="Account">
+        <span>Account</span>
+    </a>
+</div>
 </section>
+<!-- category -->
+ <section class="flex justify-between items-center px-[154px] py-2.5">
+<div>
+    <button class="w-[261px] h-[45px] rounded-[7px] bg-amber-400">Browse All Categories</button>
+</div>
+<div>
+    <a href="" class="text-[16px] font-bold text-[#7E7E7E]">Hot Deals</a>
+</div>
+<div class="flex items-center gap-[50px] text-[#7E7E7E] text-[16px] font-bold ">
+    <a href="" class="hover:text-yellow-400">Home </a>
+    <a href="" class="hover:text-yellow-400">About</a>
+    <a href="" class="hover:text-yellow-400">Shop </a>
+    <a href="" class="hover:text-yellow-400">Mega Menu </a>
+    <a href="" class="hover:text-yellow-400">Vendors</a>
+    <a href="" class="hover:text-yellow-400">Blog</a>
+    <a href="" class="hover:text-yellow-400">Pages</a>
+    <a href="" class="hover:text-yellow-400"    >Contact</a>
+</div>
+
+ </section>
+ <!-- subcription -->
+  <section class="bg-[url('image/BG1.png')] h-[538px] w-full bg-cover bg-center">
+    <div>
+        <h1 class="text-[75px] font-bold text-center">Welcome <br> to <br> Nahid Mart</h1>
+        <p class="text-[30px] font-light text-center text-[#7E7E7E]">Sign up for the daily newsletter</p>
+    </div>
+    <div class="flex justify-center py-2.5 ">
+        <input type="email" placeholder="Enter your email address" class="border-[3px]  w-[600px] h-[50px] rounded-[7px] text-left px-4">
+        <button type="submit" class="w-[140px] h-[50px] text-gray-500 font-bold rounded-[7px] bg-yellow-500">Subscribe</button>
+    </div>
+  </section>
 </body>
 </html>
